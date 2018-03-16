@@ -7,7 +7,7 @@ $semana[7] = 'Lumingo';
 $arreglo = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'];
 #arreglo con valores de multiples tipos
 $arreglo2 = array('strings', 1, array('asd',123),true);
-#recorrer un arreglo
+#recorrer un arreglo.
 echo $semana[0]. '<br>';
 echo $semana[1]. '<br>';
 echo $semana[2]. '<br>';
