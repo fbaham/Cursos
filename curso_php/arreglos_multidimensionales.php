@@ -11,4 +11,4 @@ echo $amigos[2][0].'<br>';
 echo '<br>';
 #acceder a otros multiniveles
 echo $amigos[0][0].' '.$amigos[0][2][0].' '.$amigos[0][2][1][0];
-?>
+?> 
