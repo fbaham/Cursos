@@ -13,9 +13,21 @@ if (isset($_POST['submit'])){
 		$nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
 		echo "Tu nombre es: $nombre <br>";
 	} else {
-		$errores .= 'Por favor agrega un nombre';
+		$errores .= "Por favor agrega un nombre <br>";
 	}
-	echo "Tu correo es: $correo <br>";
+
+	if (!empty($correo)){
+		$correo = filter_var($correo, FILTER_SANITIZE_EMAIL);
+
+		if(!filter_var($correo, FILTER_SANITIZE_EMAIL)) {
+			$errores .= 'Por favor ingresa un correo valido <br>';
+		} else {
+			echo "Tu correo es: $correo <br>";
+		}
+
+	}else{
+		$errores .= "Por favor agrega un correo <br>";
+	}
 }
 
  ?>
@@ -25,6 +37,9 @@ if (isset($_POST['submit'])){
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		.error{color: red;}
+	</style>
 </head>
 <body>
 	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
