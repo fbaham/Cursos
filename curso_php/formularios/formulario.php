@@ -5,10 +5,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<form action="valida_envio.php">
-		<input type="text" name="nombre">
-		<input type="email" name="correo">
-		<input type="submit" value="">
+	<form action="valida_envio.php" method="post">
+		<input type="text" name="nombre" placeholder="Nombre">
+		<input type="email" name="correo" placeholder="Correo">
+		<input type="submit" name="submit">
 	</form>
 </body>
 </html>
