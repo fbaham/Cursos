@@ -41,11 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
   }
 
-  if ($errores = '') {
-    $statement = $conexion -> prepare('INSERT INTO usuarios (id, usuario, pass) VALUES (null, :usuario, :pass);');
+  if ($errores == '') {
+    $statement = $conexion -> prepare('INSERT INTO usuarios (id, usuario, pass) VALUES (null, :usuario, :password);');
     $statement -> execute(array(
       ':usuario' => $usuario,
-      ':pass' => $pass
+      ':password' => $password
     ));
 
     header('Location: login.php');
