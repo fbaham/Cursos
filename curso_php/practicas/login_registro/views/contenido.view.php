@@ -14,12 +14,14 @@
     <h1 class="titulo">Contenido del sitio</h1>
     <a href="cerrar.php">Cerrar sesion</a>
     <hr class="border">
+
     <div class="contenido">
       <article>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In beatae officiis, molestiae impedit aspernatur libero quam architecto laudantium asperiores veritatis accusantium harum fugit quos iste et deleniti, nihil amet vel.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur fugiat delectus illo culpa laboriosam iste quia nostrum, hic omnis ratione, quae ipsum? Mollitia ducimus minima at doloremque, nobis architecto, optio.</p>
       </article>
     </div>
+
   </div>
 </body>
 </html>
