@@ -1,8 +1,7 @@
 <?php session_start();
 
-if(isset($_SESSION['usuario'])){
-  header('location: index.php');
-}
+require 'funciones.php';
+comprobar_session();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);// EVITA LA INYECCION DE CODIGO
@@ -14,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
   if (empty($usuario) or empty($password) or empty($password2)){
     $errores .= '<li>Por favor rellena todos los datos correctamente</li>';
   } else {
+
     try {
       $conexion = new PDO('mysql:host=localhost;dbname=curso_login', 'root', '');
     } catch (PDOException $e) {
