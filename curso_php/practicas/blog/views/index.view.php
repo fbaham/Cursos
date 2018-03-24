@@ -4,7 +4,7 @@
 
   <div class="post">
     <article>
-      <h2 class="titulo">Título del articulo</h2>
+      <h2 class="titulo"><a href="#">Título del articulo</a></h2>
       <p class="fecha">23 de marzo de 2018</p>
       <div class="thumb">
         <a href="#">
@@ -17,7 +17,7 @@
   </div>
   <div class="post">
     <article>
-      <h2 class="titulo">Título del articulo</h2>
+      <h2 class="titulo"><a href="">Título del articulo</a></h2>
       <p class="fecha">23 de marzo de 2018</p>
       <div class="thumb">
         <a href="#">

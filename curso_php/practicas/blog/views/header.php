@@ -14,7 +14,7 @@
   <header>
     <div class="contenedor">
       <div class="logo izquierda">
-        <p><a href="#">BLOOOOOOOOOOOOG</a></p>
+        <p><a href="<?php echo RUTA; ?>">BLOOOOOOOOOOOOG!</a></p>
       </div>
 
       <div class="derecha">
