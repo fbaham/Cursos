@@ -2,10 +2,10 @@
 require 'admin/config.php';
 require 'functions.php';
 
-$conexion = conexion(bd_config);
+$conexion = conexion($bd_config);
 $id_articulo = id_articulo($_GET['id']);
 
-if (!conexion) {
+if (!$conexion) {
   header('Location: error.php');
 }
 
@@ -15,7 +15,7 @@ if (empty($id_articulo)){
 
 $post = obtener_post_por_id($conexion, $id_articulo);
 
-if (!post){
+if (!$post){
   header('Location: index.php');
 }
 

@@ -2,7 +2,7 @@
 
 <div class="contenedor">
 
-  <?php foreach ($posts as $post): ?>
+  <?php foreach ($resultados as $post): ?>
 
     <div class="post">
       <article>
