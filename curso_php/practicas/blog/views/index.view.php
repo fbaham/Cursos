@@ -14,7 +14,7 @@
           </a>
         </div>
         <p class="extracto"><?php echo $post['extracto']; ?></p>
-        <a href="single.php?id=<?php echo $post['fecha']; ?>" class="continuar">Seguir leyendo</a>
+        <a href="single.php?id=<?php echo $post['id']; ?>" class="continuar">Seguir leyendo</a>
       </article>
     </div>
 

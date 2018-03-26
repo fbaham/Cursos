@@ -60,6 +60,7 @@ function fecha($fecha){
   return $fecha;
 }
 
+//comprueba si la sesión de admin se encuentra iniciada
 function comprobar_sesion(){
   if (!isset($_SESSION['admin'])) {
     header('Location: ' . RUTA);
