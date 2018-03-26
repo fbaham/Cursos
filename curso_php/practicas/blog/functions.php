@@ -29,7 +29,7 @@ function obtener_posts($post_por_pagina, $conexion){
   $sentencia -> execute();
   return $sentencia -> fetchAll();
 }
-
+//obtiene numero de páginas para la paginación
 function numero_paginas($post_por_pagina, $conexion){
   $total_post = $conexion -> prepare('SELECT FOUND_ROWS() as total');
   $total_post -> execute();
@@ -58,6 +58,12 @@ function fecha($fecha){
   $year = date('Y', $timestamp);
   $fecha = $day . ' de ' . $meses[$month] . " del " . $year;
   return $fecha;
+}
+
+function comprobar_sesion(){
+  if (!isset($_SESSION['admin'])) {
+    header('Location: ' . RUTA);
+  }
 }
 
 ?>

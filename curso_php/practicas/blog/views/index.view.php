@@ -12,9 +12,9 @@
           <a href="#">
             <img src="<?php echo RUTA; ?>img/<?php echo $post['thumb']; ?>" alt="">
           </a>
-          <p class="extracto"><?php echo $post['extracto']; ?></p>
-          <a href="single.php?id=<?php echo $post['fecha']; ?>" class="continuar">Seguir leyendo</a>
         </div>
+        <p class="extracto"><?php echo $post['extracto']; ?></p>
+        <a href="single.php?id=<?php echo $post['fecha']; ?>" class="continuar">Seguir leyendo</a>
       </article>
     </div>
 
